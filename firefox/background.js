@@ -3,7 +3,7 @@ browser.runtime.onInstalled.addListener(() => {
     settings: {
       defaultSpeed: 1.0,
       speedStep: 0.10,
-      rememberSpeed: true,
+      rememberSpeed: false,
       showIndicator: true,
       showPersistentIndicator: true,
       shortcuts: {
