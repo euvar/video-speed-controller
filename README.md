@@ -1,15 +1,15 @@
 # Video Speed Controller
 
-![Video Speed Controller](https://img.shields.io/badge/VIDEO%20SPEED-CONTROLLER-blue?style=for-the-badge) ![Chrome](https://img.shields.io/badge/CHROME-Manifest%20V3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) ![Firefox](https://img.shields.io/badge/FIREFOX-Manifest%20V2-FF7139?style=for-the-badge&logo=firefox&logoColor=white) ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge) ![Release](https://img.shields.io/badge/RELEASE-v1.0.0-orange?style=for-the-badge)
+![Video Speed Controller](https://img.shields.io/badge/VIDEO%20SPEED-CONTROLLER-blue?style=for-the-badge) ![Chrome](https://img.shields.io/badge/CHROME-Manifest%20V3-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white) ![Firefox](https://img.shields.io/badge/FIREFOX-Manifest%20V2-FF7139?style=for-the-badge&logo=firefox&logoColor=white) ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge) ![Release](https://img.shields.io/badge/RELEASE-v1.0.1-orange?style=for-the-badge)
 
 A cross-browser extension for controlling video playback speed on any website with keyboard shortcuts and visual indicators.
 
 ## Release
 
-**Latest Version: 1.0.0**
+**Latest Version: 1.0.1**
 
-- [Download for Chrome](https://github.com/euvar/video-speed-controller/releases/download/chrome-v1.0.0/video-speed-controller-chrome.zip) (Manifest V3)
-- [Download for Firefox](https://github.com/euvar/video-speed-controller/releases/download/firefox-v1.0.0/video-speed-controller-firefox.zip) (Manifest V2)
+- [Download for Chrome](https://github.com/euvar/video-speed-controller/releases/download/chrome-v1.0.1/video-speed-controller-chrome.zip) (Manifest V3)
+- [Download for Firefox](https://github.com/euvar/video-speed-controller/releases/download/firefox-v1.0.1/video-speed-controller-firefox.zip) (Manifest V2)
 
 ## Screenshot
 
