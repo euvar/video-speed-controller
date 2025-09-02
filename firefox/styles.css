@@ -1,0 +1,75 @@
+#vsc-temporary-indicator {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.vsc-persistent-indicator {
+  animation: fadeIn 0.3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  position: relative;
+  overflow: visible !important;
+}
+
+.vsc-persistent-indicator::before,
+.vsc-persistent-indicator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  pointer-events: none;
+}
+
+.vsc-persistent-indicator::before {
+  left: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.vsc-persistent-indicator::after {
+  right: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.vsc-persistent-indicator.vsc-dragging::before {
+  animation: leftBounce 0.8s ease-in-out infinite;
+}
+
+.vsc-persistent-indicator.vsc-dragging::after {
+  animation: rightBounce 0.8s ease-in-out infinite;
+}
+
+@keyframes leftBounce {
+  0%, 100% {
+    transform: scaleX(1) translateX(0);
+  }
+  25% {
+    transform: scaleX(0.9) translateX(2px);
+  }
+  75% {
+    transform: scaleX(1.1) translateX(-2px);
+  }
+}
+
+@keyframes rightBounce {
+  0%, 100% {
+    transform: scaleX(1) translateX(0);
+  }
+  25% {
+    transform: scaleX(1.1) translateX(-2px);
+  }
+  75% {
+    transform: scaleX(0.9) translateX(2px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
