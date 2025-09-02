@@ -8,8 +8,8 @@ A cross-browser extension for controlling video playback speed on any website wi
 
 **Latest Version: 1.0.0**
 
-- [Download for Chrome](https://github.com/euvar/video-speed-controller/releases/download/v1.0.0/video-speed-controller-chrome.zip) (Manifest V3)
-- [Download for Firefox](https://github.com/euvar/video-speed-controller/releases/download/v1.0.0/video-speed-controller-firefox.zip) (Manifest V2)
+- [Download for Chrome](https://github.com/euvar/video-speed-controller/releases/download/chrome-v1.0.0/video-speed-controller-chrome.zip) (Manifest V3)
+- [Download for Firefox](https://github.com/euvar/video-speed-controller/releases/download/firefox-v1.0.0/video-speed-controller-firefox.zip) (Manifest V2)
 
 ## Screenshot
 
