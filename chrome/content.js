@@ -14,8 +14,6 @@ let settings = {
     speedUp: 'd',
     speedDown: 's',
     reset: 'r',
-    rewind: 'a',
-    advance: 'f',
     toggleIndicator: 'v'
   }
 };
@@ -354,15 +352,12 @@ function handleKeydown(event) {
   }
   
   const key = event.key.toLowerCase();
-  let handled = false;
   
   // Support both keyboard layouts
   const keyMap = {
     's': ['s', 'ы'],
     'd': ['d', 'в'],
     'r': ['r', 'к'],
-    'a': ['a', 'ф'],
-    'f': ['f', 'а'],
     'v': ['v', 'м']
   };
   
@@ -377,37 +372,21 @@ function handleKeydown(event) {
     event.stopPropagation();
     event.stopImmediatePropagation();
     changeSpeed(settings.speedStep);
-    handled = true;
   } else if (matchesKey(settings.shortcuts.speedDown, key)) {
     event.preventDefault();
     event.stopPropagation();
     event.stopImmediatePropagation();
     changeSpeed(-settings.speedStep);
-    handled = true;
   } else if (matchesKey(settings.shortcuts.reset, key)) {
     event.preventDefault();
     event.stopPropagation();
     event.stopImmediatePropagation();
     resetSpeed();
-    handled = true;
-  } else if (matchesKey(settings.shortcuts.rewind, key)) {
-    event.preventDefault();
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    seekVideo(-10);
-    handled = true;
-  } else if (matchesKey(settings.shortcuts.advance, key)) {
-    event.preventDefault();
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    seekVideo(10);
-    handled = true;
   } else if (matchesKey(settings.shortcuts.toggleIndicator, key)) {
     event.preventDefault();
     event.stopPropagation();
     event.stopImmediatePropagation();
     togglePersistentIndicator();
-    handled = true;
   }
 }
 
@@ -425,7 +404,7 @@ function initializeVideos() {
       updateVideoSpeed(video, currentSpeed);
       
       // Monitor external speed changes
-      video.addEventListener('ratechange', (e) => {
+      video.addEventListener('ratechange', () => {
         if (Math.abs(video.playbackRate - currentSpeed) > 0.01) {
           currentSpeed = video.playbackRate;
           updatePersistentIndicators();
@@ -459,7 +438,7 @@ const videoObserver = new MutationObserver((mutations) => {
 });
 
 // Message handler
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((request, _sender, sendResponse) => {
   if (request.action === 'updateSettings') {
     settings = { ...settings, ...request.settings };
     updatePersistentIndicators();

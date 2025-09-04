@@ -22,8 +22,6 @@ A cross-browser extension for controlling video playback speed on any website wi
   - `S` / `Ы` - Decrease speed
   - `D` / `В` - Increase speed
   - `R` / `К` - Reset speed to 1.0x
-  - `A` / `Ф` - Rewind 10 seconds
-  - `F` / `А` - Forward 10 seconds
   - `V` / `М` - Toggle speed indicator visibility
 - **Visual Speed Indicator**: Draggable on-screen display with auto-hide functionality
 - **Dual Language Support**: English and Russian interface
